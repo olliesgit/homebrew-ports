@@ -1,8 +1,8 @@
 class Ports < Formula
   desc "CLI Ports Table - what's running on your macOS ports"
   homepage "https://github.com/olliesgit/cli-ports-table"
-  url "https://github.com/olliesgit/cli-ports-table/archive/refs/tags/v1.2.1.tar.gz"
-  sha256 "bac25421700d89b4df76b98fc8522f4c2c38b0681d1f4afc0a836598daf28719"
+  url "https://github.com/olliesgit/cli-ports-table/archive/refs/tags/v1.2.2.tar.gz"
+  sha256 "38c89023603f4136e3e23ebb95542fc20659639c0125d6c12c84c7f5928eb685"
   license "MIT"
 
   def install
@@ -10,6 +10,6 @@ class Ports < Formula
   end
 
   test do
-    system "#{bin}/ports", "--help"
+    system "#{bin}/ports", "--self-test"
   end
 end
